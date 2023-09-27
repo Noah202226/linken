@@ -4,14 +4,7 @@ import useTheme from "../stores/useTheme";
 const Hero = () => {
   const { theme } = useTheme((state) => state);
   return (
-    <div
-      className={`hero h-screen `}
-      style={{
-        backgroundImage:
-          "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
-      }}
-      data-theme={theme}
-    >
+    <div className={`hero h-screen `} data-theme={theme}>
       <video
         autoPlay
         muted
@@ -23,6 +16,45 @@ const Hero = () => {
       </video>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
+        {/* Open the modal using document.getElementById('ID').showModal() method */}
+        <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+          <div className="modal-box">
+            {/* Title modal */}
+            <div className="h-full flex items-center justify-between relative">
+              <h3 className="font-bold text-lg">
+                What kind of Software you want to get?
+              </h3>
+              <div className="modal-action">
+                <form method="dialog">
+                  {/* if there is a button in form, it will close the modal */}
+                  <button className="btn btn-ghost absolute top-0 right-0">
+                    X
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div className="h-full flex flex-col items-center justify-between">
+              <select className="select select-primary w-full max-w-xs">
+                <option disabled selected>
+                  Software Type
+                </option>
+                <option>Web Application</option>
+                <option>Desktop Application</option>
+              </select>
+
+              <select className="select select-primary w-full max-w-xs">
+                <option disabled selected>
+                  Software for
+                </option>
+                <option>Company Website</option>
+                <option>Desktop Application</option>
+              </select>
+              <button className="btn">Submit</button>
+            </div>
+          </div>
+        </dialog>
+
         <div className="w-full  flex flex-col md:flex-row items-center justify-between">
           <div className="mt-20 md:mt-0">
             <h1 className="mb-5 text-5xl font-bold">

@@ -123,7 +123,7 @@ const Navbar = () => {
         </label>
         <a
           className="btn md:btn-md md:btn-wide  btn-primary ml-2"
-          onClick={() => {}}
+          onClick={() => document.getElementById("my_modal_5").showModal()}
         >
           Request a Quote
         </a>

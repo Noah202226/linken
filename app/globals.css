@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.project-image {
+  object-fit: cover;
+  /* object-position: 10% 10%; */
+}
