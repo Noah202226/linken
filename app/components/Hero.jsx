@@ -23,8 +23,8 @@ const Hero = () => {
       </video>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
-        <div className="w-full  flex items-center justify-between">
-          <div className="">
+        <div className="w-full  flex flex-col md:flex-row items-center justify-between">
+          <div className="mt-20 md:mt-0">
             <h1 className="mb-5 text-5xl font-bold">
               Empowering Innovation through Cutting-Edge Software
             </h1>
