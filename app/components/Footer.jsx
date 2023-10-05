@@ -36,7 +36,8 @@ const Footer = () => {
           <p>
             Linken Corp. <br />
             {/* Providing reliable tech since 1992 */}
-            Providing software that help you manage your business
+            Providing software that help you scale your business using latest
+            technologies.
           </p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">

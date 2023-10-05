@@ -36,7 +36,7 @@ const Hero = () => {
 
             <div className="h-full flex flex-col items-center justify-between">
               <select className="select select-primary w-full max-w-xs">
-                <option disabled selected>
+                <option disabled defaultValue={`Software Type`}>
                   Software Type
                 </option>
                 <option>Web Application</option>
@@ -44,7 +44,7 @@ const Hero = () => {
               </select>
 
               <select className="select select-primary w-full max-w-xs">
-                <option disabled selected>
+                <option disabled defaultValue={`Software for`}>
                   Software for
                 </option>
                 <option>Company Website</option>

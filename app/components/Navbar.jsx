@@ -54,14 +54,15 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="">
+        <a className="flex items-center __className_e66fe9">
           <Image
             src={"/linken-light.png"}
             alt="linken logo"
             width={50}
             height={50}
             style={{ objectFit: "fill" }}
-          />
+          />{" "}
+          <p className="text-3xl ml-4 tracking-widest text-cyan-500">Linken</p>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
